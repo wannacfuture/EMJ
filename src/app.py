@@ -73,17 +73,17 @@ class Application :
         self._mainWin.events.closing += self._onMainWinClosing
         self._mainWin.events.closed  += self._onMainWinClosed
     
-    # ------------------------------------------------------------------------
+    # # ------------------------------------------------------------------------
 
-    @staticmethod
-    def _localURL(ressource) :
-        antiCache = str(random())
-        return 'http://%s:%s/%s?=%s' % ( conf.WEB_SRV_BIND_IP,
-                                         conf.WEB_SRV_PORT,
-                                         ressource,
-                                         antiCache )
+    # @staticmethod
+    # def _localURL(ressource) :
+    #     antiCache = str(random())
+    #     return 'http://%s:%s/%s?=%s' % ( conf.WEB_SRV_BIND_IP,
+    #                                      conf.WEB_SRV_PORT,
+    #                                      ressource,
+    #                                      antiCache )
 
-    # ------------------------------------------------------------------------
+    # # ------------------------------------------------------------------------
 
     @staticmethod
     def _sizeToText(size, unity) :
